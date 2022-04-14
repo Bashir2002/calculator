@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+body{
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    background: #e0e0e0;
+
+}
+.container{
+    /* border: 1px red solid; */
+    border-radius: 20px;
+    background: #e0e0e0;
+    box-shadow:  5px 5px 10px #bebebe,-5px -5px 10px #ffffff;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+.screen{
+    height:70px;
+    text-align: right;
+    padding-right:  35px;
+    border-radius: 69px;
+    background: #e0e0e0;
+    box-shadow: inset -7px 7px 14px #acacac,
+            inset 7px -7px 14px #ffffff;
+    margin-bottom:25px ;
+    /* padding: 70px 35px auto 0; */
+    font-size: 30px;
+    padding-top: 20px;
+}
+.calc-buttons{
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24% ;
+    gap: 1%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.calc-button{
+    padding: 19px 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 69px;
+    background: linear-gradient(225deg, #f0f0f0, #cacaca);
+    box-shadow:  -7px 7px 14px #acacac,7px -7px 14px #ffffff;
+}
+#operator{
+    background: linear-gradient(45deg, #f87465, #d16155);
+    border-radius: 69px;
+    padding: 19px 50px;
+    font-size: 30px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    /* background: linear-gradient(225deg, #f0f0f0, #cacaca); */
+    box-shadow:  -7px 7px 14px #acacac,7px -7px 14px #ffffff;
+
+
+}
+#zero{
+    grid-column: span 3;
+}
+#clear{
+    grid-column: span 2;
+}
