@@ -13,6 +13,7 @@ body{
 }
 .container{
     /* border: 1px red solid; */
+    max-width: 500px;
     border-radius: 20px;
     background: #e0e0e0;
     box-shadow:  5px 5px 10px #bebebe,-5px -5px 10px #ffffff;
@@ -66,4 +67,13 @@ body{
 }
 #clear{
     grid-column: span 2;
+}
+
+@media only screen and (max-width: 600px) {
+    #operator{
+        padding: 19px 25px;
+    }
+    .calc-button{
+        padding: 19px 25px;
+    }
 }
